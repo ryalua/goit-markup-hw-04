@@ -69,9 +69,7 @@ ul {
 .com-header {
     display: flex;
     align-items: center;
-    /* justify-content: space-around; */
 }
-
 .nav-header .item:not(:last-child) {
     margin-right: 50px;
 }
@@ -93,6 +91,14 @@ ul {
 .nav-header .link:hover,
 .nav-header .link:focus {
     color: var(--accent-color);
+}
+.link-current {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--accent-color);
+    text-decoration: none;
 }
 
 /*----- Com heder -----*/
@@ -117,26 +123,46 @@ ul {
 }
 
 .com-header .link {
-    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 
     color: var(--title-text-color);
     text-decoration:none;
-    
 }
-.link-current {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
 
-    color: var(--accent-color);
-    text-decoration:none;
-    ;
-}
 .com-header .link {
     color: var(--primery-text-color);
 } 
+
+
+
+
+.icon-envelope {
+    display: inline-flex;
+    align-items: center;
+}
+.icon-envelope::before {
+    content: '';
+    min-width: 16px;
+    height: 12px;
+    background-image: url("../images/i_envelope(hover).svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.icon-smartphone {
+    display: inline-flex;
+    align-items: center;
+    /* margin-right: 10px; */
+}
+.icon-smartphone::before {
+    content: "";
+    min-width: 10px;
+    height: 16px;
+    background-image: url("../images/i_smartphone.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 
 /*------------------- Hero h1----------------------*/
