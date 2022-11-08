@@ -131,7 +131,15 @@ ul {
     color: var(--primery-text-color);
 } 
 
-
+.item {
+    margin: 0.25rem;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: var(--accent);
+    }
+}
 .icon {
     display: flex;
     align-items: center;
@@ -263,12 +271,26 @@ h2 {
     line-height: 1.88;
 }
 
-.icon-antenna {
-    margin-right: 10px;
+.icon-features { 
+    margin-bottom: 30px;
 
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    
+}
+
+.icon-antenna {
+    display: flex;
+    padding-top: 25px; 
+    padding-right: 100px;
+   
     width: 70px;
     height: 70px;
     fill: currentColor;
+
+    align-items: center;
+    background-position: center;
 }
 
 /*----- Work -----*/
