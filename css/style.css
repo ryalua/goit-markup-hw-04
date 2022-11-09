@@ -131,37 +131,33 @@ ul {
     color: var(--primery-text-color);
 } 
 
-.item {
-    margin: 0.25rem;
+/* .item {
     display: block;
-    padding: 0.5rem;
-    border-radius: 50%;
-    background-color: var(--primary);
-    color: var(--accent);
-    }
-}
+    background-color: var(--primary-text-color);
+    color: var(--accent--color);
+    } */
 .icon {
     display: flex;
     align-items: center;
 }
-.icon-envelope {
+.icon-mail {
     margin-right: 10px;
 
     width: 16px;
     height: 12px;
     fill: currentColor;
 }
-.icon-smartphone {
+.icon-phone {
     margin-right: 10px;
 
     width: 10px;
     height: 16px;
     fill: currentColor;
 }
-.com-header .icon-envelope:hover,
+/* .com-header .icon-envelope:hover,
 .com-header .icon-smartphone:hover {
     fill: var(--accent-color);
-}
+} */
 
 
 
@@ -215,9 +211,9 @@ ul {
     background-color: var(--button-hero-hover);
 }
 
-/*------------------ Section h2 --------------*/
+/*------------------ All Section h2 --------------*/
 h2 {
-    margin-bottom: 50px;
+     margin-bottom: 50px;
 }
 .visually-hidden {
     position: absolute;
@@ -231,16 +227,15 @@ h2 {
     clip-path: inset(50%);
     margin: -1px;
 }
-
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
+/*----- Features h3, p -----*/
 .section-features {
     padding-top: 94px;
 }
-
-/*----- Features h3, p -----*/
 .features {
     display: flex;
     gap: 30px;
@@ -248,7 +243,6 @@ h2 {
 .feature-item {
     flex-basis: calc((100% - 90px)/4);
 }
-
 .features .title {
     margin-bottom: 10px;
  
@@ -263,43 +257,57 @@ h2 {
     font-size: 14px;
     line-height: 1.71;
 }
-
 .link .text {
     color: var(--primery-text-color);
     font-size: 14px;
     font-size: 16px;
     line-height: 1.88;
-}
-
-.icon-features { 
+} 
+.icon-features {
+    /* display: flex; */
     margin-bottom: 30px;
+    padding-top: 25px;
+    padding-right: 100px;
+    padding-bottom: 25px;
+    padding-left: 100px;
 
     width: 270px;
     height: 120px;
-    background-color: #F5F4FA;
-    
+    background-color: var(--button-white-bcg);
+    /* align-items: center; */
 }
-
 .icon-antenna {
-    display: flex;
-    padding-top: 25px; 
-    padding-right: 100px;
-   
     width: 70px;
     height: 70px;
     fill: currentColor;
-
-    align-items: center;
-    background-position: center;
 }
+.icon-clock {
+    width: 70px;
+    height: 70px;
+    fill: currentColor;
+}
+.icon-diagram {
+    width: 70px;
+    height: 70px;
+    fill: currentColor;
+}
+.icon-astronaut {
+    width: 70px;
+    height: 70px;
+    fill: currentColor;
+    }
 
 /*----- Work -----*/
 .work {
     display: flex;
+    gap: 30px;
 }
-.work-item:not(:last-child) {
+.work-item {
+    flex-basis: calc((100% - 60px)/3);
+}
+/* .work-item:not(:last-child) {
     margin-right: 30px;
-}
+} */
 
 /*----- Team h3, p -----*/
 .section-staff {
@@ -337,6 +345,56 @@ h2 {
     padding-top:30px;
     padding-bottom: 30px;
     
+}
+.icon-staff {
+     display: flex;
+    gap: 30px;
+
+    margin-right: 32;
+    margin-bottom: 30px;
+    margin-left: 32;
+    /* padding-top: 25px;
+    padding-right: 100px;
+    padding-bottom: 25px;
+    padding-left: 100px; */
+
+    width: 206px;
+    height: 44px;
+    background-color: var(--button-white-bcg);
+    align-items: center;
+}
+.icon-staff-net {
+    flex-basis: calc((100% - 10px)/4);
+
+        
+    
+        
+}
+
+
+/* ------------------- Clients ---------------*/
+
+.clients {
+    display: flex;
+    gap: 30px;
+}
+
+.client-item {
+    flex-basis: calc((100% - 150px)/6);
+
+}
+.icon-client {
+    display: flex;
+    /* margin-bottom: 30px;
+    padding-top: 25px;
+    padding-right: 100px;
+    padding-bottom: 25px;
+    padding-left: 100px; */
+
+    width: 170px;
+    height: 92px;
+    background-color: var(--button-white-bcg);
+    align-items: center;
 }
 
 /*-------------------- Portfolio -------------*/
