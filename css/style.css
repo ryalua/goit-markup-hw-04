@@ -501,11 +501,14 @@ img {
 
 /*-------------------- Footer -------------------*/
 .bcg-footer {
-    display: flex;
+    
     padding-top: 60px;
     padding-bottom: 60px;
 
     background-color: var(--hero-footer-bcg);
+}
+.footer-box {
+    display: flex;
 }
 .logo-footer {
     display: inline-block;
@@ -546,15 +549,17 @@ img {
 }
 /* ------ Join --------*/
 .soc-footer {
-    
+    margin-left: 70px;
 }
 .footer-title {
     margin-bottom: 20px;
     color: #FFFFFF;
     text-transform: uppercase;
+
     font-weight: 700;
-    font size: 14px;
-    line height: 1.14;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
     
 }
 .footer-soc-list {
