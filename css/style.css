@@ -462,10 +462,6 @@ h2 {
 .project-link:focus {
     box-shadow: var(--shadow-cards-button);
 }
-.project-title:hover {
-    box-shadow: var(--shadow-cards-button);
-}
-
 .projects .link {
     padding-top: 0;
     padding-bottom: 0;
